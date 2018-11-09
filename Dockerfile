@@ -23,7 +23,7 @@ ARG NUX_DEXTOP_RPM_URL=http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dexto
 RUN yum -y install epel-release \
     && rpm --import ${NUX_GPG_KEY_URL} \
     && rpm -Uvh ${NUX_DEXTOP_RPM_URL} \
-    && yum -y install ffmpeg ffmpeg2theora perl-Image-ExifTool ufraw
+    && yum -y install ffmpeg ffmpeg2theora perl-Image-ExifTool ufraw librsvg2-tools
 
 
 USER 1000
