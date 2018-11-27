@@ -11,7 +11,7 @@ RUN mkdir -p /home/jenkins && \
 
 # Copy the entrypoint
 ADD contrib/bin/* /usr/local/bin/
-
+ADD settings.xml $HOME/.m2/
 # Run the Jenkins JNLP client
 ENTRYPOINT ["/usr/local/bin/run-jnlp-client"]
 
